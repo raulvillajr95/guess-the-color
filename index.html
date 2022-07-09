@@ -5,23 +5,32 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
-  <script src="scripts.js" defer></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
   <title>Guess the Color</title>
 </head>
 <body>
+  <h1 class="title">Guess the Color</h1>
   <div class="container">
-    <h1 class="rgb-text">rgb(255, 255, 0)</h1>
-    <div class="color-picker"></div>
-    <button class="enter">Enter</button>
+    <h2 class="rgb-text">rgb(255, 255, 0)</h2>
+    <div class="wheel" id="colorWheelDemo"></div>
+    <div class="buttons">
+      <button class="enter">Enter</button>
+      <button class="new-color">New Color</button>
+    </div>
     <p class="points">* 100 points *</p>
   </div>
+  <script src="https://cdn.jsdelivr.net/npm/@jaames/iro"></script>
+  <script src="scripts.js"></script>
 </body>
 </html>
 
 <!-- 
--css
-everything centered, nicely aligned
--background js work
+-change console logs to .textContext
+
+Later:
+-cursors with pointer where clicking happens
 
 Funtionality:
 -user is presented with random RGB code(e.g. 255, 255, 0)
