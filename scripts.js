@@ -39,21 +39,30 @@ console.log(findDistance([-3,4,2],[-3,4,2]))
 enter.addEventListener('click', () => {
   let colorEntered = [colorWheel.color.rgb.r, colorWheel.color.rgb.g, colorWheel.color.rgb.b]
   
+  let firstPartPhrase = `${findDistance(colorEntered, currentColor)} points away from the real color, `
 
+  let phrase;
   if (findDistance(colorEntered, currentColor) == 0) {
-    console.log('PERFECT')
+    phrase = 'PERFECT'
+    points.textContent = `${firstPartPhrase}${phrase}`;
   } else if (findDistance(colorEntered, currentColor) <= 25) {
-    console.log('Excellent!!')
+    phrase = 'excellent!'
+    points.textContent = `${firstPartPhrase}${phrase}`;
   } else if (findDistance(colorEntered, currentColor) <= 50) {
-    console.log('Very good')
+    phrase = 'very good'
+    points.textContent = `${firstPartPhrase}${phrase}`;
   } else if (findDistance(colorEntered, currentColor) <= 75) {
-    console.log('Nice')
+    phrase = 'nice'
+    points.textContent = `${firstPartPhrase}${phrase}`;
   } else if (findDistance(colorEntered, currentColor) <= 100) {
-    console.log('Meh')
+    phrase = 'meh'
+    points.textContent = `${firstPartPhrase}${phrase}`;
   } else if (findDistance(colorEntered, currentColor) <= 150) {
-    console.log('You could do better')
+    phrase = 'You could do better'
+    points.textContent = `${firstPartPhrase}${phrase}`;
   } else if (findDistance(colorEntered, currentColor) <= 200) {
-    console.log('Gaming isn\'t for everyone')
+    phrase = 'gaming isn\'t for everyone'
+    points.textContent = `${firstPartPhrase}${phrase}`;
   }
 
   //console.log(findDistance(colorEntered, someColor))
