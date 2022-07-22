@@ -33,7 +33,6 @@ function findDistance(points1, points2) {
   let z2 = points2[2];
   return parseInt(Math.sqrt((x2-x1)**2+(y2-y1)**2+(z2-z1)**2))
 }
-console.log(findDistance([-3,4,2],[-3,4,2]))
 
 // Pressing enter button
 enter.addEventListener('click', () => {
@@ -58,24 +57,12 @@ enter.addEventListener('click', () => {
     phrase = 'meh'
     points.textContent = `${firstPartPhrase}${phrase}`;
   } else if (findDistance(colorEntered, currentColor) <= 150) {
-    phrase = 'You could do better'
+    phrase = 'you could do better'
     points.textContent = `${firstPartPhrase}${phrase}`;
-  } else if (findDistance(colorEntered, currentColor) <= 200) {
+  } else {
     phrase = 'gaming isn\'t for everyone'
     points.textContent = `${firstPartPhrase}${phrase}`;
   }
-
-  //console.log(findDistance(colorEntered, someColor))
-
-  // console.log(colorEntered == [255, 255, 255])
-  // console.log(typeof colorEntered, typeof [255, 255, 255])
-  // see wassup with colorEntered and current color
-  // they should be equal
-
-  // use distance formula, maybe a 3 point distance formula
-
-  // console.log(colorEntered)
-  // console.log(currentColor)
 })
 
 // Reset
