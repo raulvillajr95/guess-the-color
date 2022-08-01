@@ -105,3 +105,74 @@ body {
   width: 3rem;
   height: 3rem;
 }
+
+/* Tablet CSS */
+@media only screen and (max-width: 70em) {
+  .title {
+    font-size: 4rem;
+  }
+  .container .rgb-text {
+    font-size: 2.5rem;
+  }
+  .container .wheel {
+    width: 25rem;
+    height: 25rem;
+  }
+  .container .enter {
+    height: 2.5rem;
+    width: 8rem;
+  }
+  .new-color {
+    height: 2.5rem;
+    width: 8rem;
+  }
+}
+
+/* Mobile CSS */
+@media only screen and (max-width: 38em) {
+  .title {
+    font-size: 2.75rem;
+  }
+  .container .rgb-text {
+    font-size: 2rem;
+  }
+  .container .wheel {
+    height: 15rem;
+    width: 20rem;
+  }
+  .container .enter {
+    height: 2rem;
+    width: 6.5rem;
+  }
+  .new-color {
+    height: 2rem;
+    width: 6.5rem;
+  }
+
+}
+
+/* CSS for Small Mobiles */
+@media only screen and (max-width: 20em) {
+
+  .title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  .container {
+    height: 22rem;
+  }
+  .container .rgb-text {
+    font-size: 1.25rem;
+  }
+  .container .wheel {
+    height: 13rem;
+    width: 15rem;
+  }
+  .container .points {
+    font-size: 0.8rem;
+    width: 18rem;
+  }
+  .logo-img {
+    margin-top: 0rem;
+  }
+}
