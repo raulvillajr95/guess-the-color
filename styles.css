@@ -108,7 +108,6 @@ body {
 
 /* CSS for Small Mobiles */
 @media only screen and (max-width: 20em) {
-
   .title {
     font-size: 1.5rem;
     margin-bottom: 1rem;
@@ -129,5 +128,21 @@ body {
   }
   .logo-img {
     margin-top: 0rem;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  /* My CSS */
+  body {
+    color: #f3f3f3;
+    background-color: #141414;
+  }
+  .container .enter {
+    color: white;
+    background-color: #0275d8;
+  }
+  .new-color {
+    color: white;
+    background-color: #5BC0DE;
   }
 }
