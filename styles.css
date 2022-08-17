@@ -6,8 +6,8 @@ body {
   height: 100vh;
   font-family: Arial, Helvetica, sans-serif;
   flex-direction: column;
-  color: #f3f3f3;
-  background-color: #141414;
+  color: #141414;
+  background-color: #f3f3f3;
 }
 .title {
   font-size: 3rem;
