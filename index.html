@@ -1,55 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="reset.css">
-  <link rel="stylesheet" href="styles.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
-  <link rel="apple-touch-icon" sizes="180x180" href="https://www.raulvillalobos.online/doodledee-games/doodledee-images/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="https://www.raulvillalobos.online/doodledee-games/doodledee-images/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="https://www.raulvillalobos.online/doodledee-games/doodledee-images/favicon-16x16.png">
-  <link rel="manifest" href="https://www.raulvillalobos.online/doodledee-games/doodledee-images/site.webmanifest">
-  <link rel="mask-icon" href="https://www.raulvillalobos.online/doodledee-games/doodledee-images/safari-pinned-tab.svg" color="#5bbad5">
-  <link rel="shortcut icon" href="https://www.raulvillalobos.online/doodledee-games/doodledee-images/favicon.ico">
-  <meta name="msapplication-TileColor" content="#da532c">
-  <meta name="msapplication-config" content="https://www.raulvillalobos.online/doodledee-games/doodledee-images/browserconfig.xml">
-  <meta name="theme-color" content="#ffffff">
-  <meta name="description" content="You are given a color in RGB text form. Choose what color you think it is from the color picker.">
-  <title>Guess the Color</title>
-</head>
-<body>
-  <h1 class="title">Guess the Color</h1>
-  <div class="container">
-    <h2 class="rgb-text"></h2>
-    <div class="wheel" id="colorWheelDemo"></div>
-    <div class="buttons">
-      <button class="enter">Enter</button>
-      <button class="new-color">New Color</button>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://www.raulvillalobos.online/doodledee-games/doodledee-images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://www.raulvillalobos.online/doodledee-games/doodledee-images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://www.raulvillalobos.online/doodledee-games/doodledee-images/favicon-16x16.png">
+    <link rel="manifest" href="https://www.raulvillalobos.online/doodledee-games/doodledee-images/site.webmanifest">
+    <link rel="mask-icon" href="https://www.raulvillalobos.online/doodledee-games/doodledee-images/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="https://www.raulvillalobos.online/doodledee-games/doodledee-images/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="https://www.raulvillalobos.online/doodledee-games/doodledee-images/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="description" content="You are given a color in RGB text form. Choose what color you think it is from the color picker.">
+    <title>Guess the Color</title>
+  </head>
+  <body>
+    <h1 class="title">Guess the Color</h1>
+    <div class="container">
+      <h2 class="rgb-text"></h2>
+      <div class="wheel" id="colorWheelDemo"></div>
+      <div class="buttons">
+        <button class="enter">Enter</button>
+        <button class="new-color">New Color</button>
+      </div>
+      <p class="points"></p>
     </div>
-    <p class="points"></p>
-  </div>
-  <a href="https://wwww.raulvillalobos.online/doodledee-games">
-    <img src="images/doodledee-logo.png" alt="DoodleDee little circular logo" class="logo-img">
-  </a>
-  <script src="https://cdn.jsdelivr.net/npm/@jaames/iro"></script>
-  <script src="scripts.js"></script>
-</body>
+    <a href="https://wwww.raulvillalobos.online/doodledee-games">
+      <img src="images/doodledee-logo.png" alt="DoodleDee little circular logo" class="logo-img">
+    </a>
+    <script src="https://cdn.jsdelivr.net/npm/@jaames/iro"></script>
+    <script src="scripts.js"></script>
+  </body>
 </html>
-
-<!-- 
--set phrase
-have the 'points away' and phrase onto html
-
-Later:
--cursors with pointer where clicking happens
-
-Funtionality:
--user is presented with random RGB code(e.g. 255, 255, 0)
--they must guess with cursor on color picker what color they think it is
--the closer they are to the real rgb, the more points they get
-
- -->

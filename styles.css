@@ -23,9 +23,7 @@ body {
   justify-content: space-between;
   align-items: center;
 }
-.container .rgb-text {
-  font-size: 2rem;
-}
+.container .rgb-text {font-size: 2rem}
 .container .wheel {
   height: 15rem;
   width: 20rem;
@@ -40,6 +38,7 @@ body {
   border-style: none;
   color: white;
   background-color: #0275d8;
+  cursor: pointer;
 }
 .new-color {
   height: 2rem;
@@ -48,6 +47,7 @@ body {
   border-style: none;
   color: white;
   background-color: #5BC0DE;
+  cursor: pointer;
 }
 .container .points {
   font-size: 1.5rem;
@@ -63,12 +63,8 @@ body {
 
 /* Tablet CSS */
 @media only screen and (max-width: 70em) {
-  .title {
-    font-size: 4rem;
-  }
-  .container .rgb-text {
-    font-size: 2.5rem;
-  }
+  .title {font-size: 4rem}
+  .container .rgb-text {font-size: 2.5rem}
   .container .wheel {
     width: 25rem;
     height: 25rem;
@@ -85,12 +81,8 @@ body {
 
 /* Mobile CSS */
 @media only screen and (max-width: 38em) {
-  .title {
-    font-size: 2.75rem;
-  }
-  .container .rgb-text {
-    font-size: 2rem;
-  }
+  .title {font-size: 2.75rem}
+  .container .rgb-text {font-size: 2rem}
   .container .wheel {
     height: 15rem;
     width: 20rem;
@@ -103,7 +95,6 @@ body {
     height: 2rem;
     width: 6.5rem;
   }
-
 }
 
 /* CSS for Small Mobiles */
@@ -112,12 +103,8 @@ body {
     font-size: 1.5rem;
     margin-bottom: 1rem;
   }
-  .container {
-    height: 22rem;
-  }
-  .container .rgb-text {
-    font-size: 1.25rem;
-  }
+  .container {height: 22rem}
+  .container .rgb-text {font-size: 1.25rem}
   .container .wheel {
     height: 13rem;
     width: 15rem;
@@ -126,9 +113,7 @@ body {
     font-size: 0.8rem;
     width: 18rem;
   }
-  .logo-img {
-    margin-top: 0rem;
-  }
+  .logo-img {margin-top: 0rem}
 }
 
 @media (prefers-color-scheme: dark) {
